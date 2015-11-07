@@ -47,4 +47,4 @@ Part of what makes our containers work so well is by allowing you to specify you
 
 ## Versions
 
-+ **dd.MM.yyyy:** This is the standard Version type now. 
++  **06.11.2015:** Initial Release
