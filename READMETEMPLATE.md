@@ -38,7 +38,7 @@ Part of what makes our containers work so well is by allowing you to specify you
 
 * change /config/www/plugins/Codiad-CodeGit-master/shell.sh to add Git User/Pass
 * change /config/www/plugins/Codiad-Terminal-master/emulator/term.php to change terminal password
-
+* use /config/projects to save your projects, for data persistence
 ## Updates
 
 * Upgrade to the latest version simply `docker restart codiad`.
