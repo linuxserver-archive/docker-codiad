@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# set projects folder
+mkdir -p /config/projects
+
 #base program
-[[ ! -d "/config/www/.git" ]] && (git clone https://github.com/Codiad/Codiad /config/www && cp /defaults/config.php /config/www/config.php)
+[[ ! -d "/config/www/.git" ]] && (rm -rf /config/www/* && git clone https://github.com/Codiad/Codiad /config/www && cp /defaults/config.php /config/www/config.php)
 cd /config/www
 git pull
 
