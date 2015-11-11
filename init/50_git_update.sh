@@ -28,5 +28,12 @@ git pull
 cd /config/www/plugins/Codiad-Terminal-master/
 git pull
 
+#remove error on collaboration
+sed -i s/'echo formatJSEND("error","Warning: File ".'/'# echo formatJSEND("error","Warning: File ".'/ /config/www/components/active/class.active.php
+
+
 #fix ownership
 chown -R abc:abc /config
+
+
+
