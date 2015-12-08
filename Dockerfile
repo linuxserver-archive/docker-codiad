@@ -1,7 +1,7 @@
 FROM linuxserver/baseimage.apache
 MAINTAINER smdion <me@seandion.com>
 
-ENV APTLIST="git expect"
+ENV APTLIST="git expect php5-ldap"
 
 # install main packages
 RUN apt-get update -q && \
