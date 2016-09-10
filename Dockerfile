@@ -1,6 +1,9 @@
 FROM linuxserver/baseimage.apache
 MAINTAINER smdion <me@seandion.com>
 
+# copy sources.list
+COPY sources.list /etc/apt/
+
 ENV APTLIST="git expect php5-ldap"
 
 # install main packages
