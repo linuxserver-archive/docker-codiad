@@ -3,7 +3,7 @@
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
 
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
+[![](https://images.microbadger.com/badges/version/linuxserver/codiad.svg)](https://microbadger.com/images/linuxserver/codiad "Get your own version badge on microbadger.com")[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
 The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
 * [forum.linuxserver.io][forumurl]
@@ -64,12 +64,22 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 * change /config/www/plugins/Codiad-CodeGit-master/shell.sh to add Git User/Pass
 * change /config/www/plugins/Codiad-Terminal-master/emulator/term.php to change terminal password
 
-## Updates
-* Upgrade to the latest version simply `docker restart codiad`.
+## Info
+
 * To monitor the logs of the container in realtime `docker logs -f codiad`.
+
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' codiad`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/codiad`
+
 
 
 ## Versions
 
++ **14-10-16:** Add version layer information.
 +  **10.09.16:** Add layer badges to README
 +  **06.11.15:** Initial Release
