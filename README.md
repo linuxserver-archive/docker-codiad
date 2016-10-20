@@ -22,7 +22,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * Drag and Drop - https://github.com/Andr3as/Codiad-DragDrop
 
 
-[![codiad](http://kentnagao.noip.me/joomla/images/codiad.png)][codiadurl]
+[![codiad](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/codiad.png)][codiadurl]
 [codiadurl]: http://codiad.com/
 
 ## Usage
