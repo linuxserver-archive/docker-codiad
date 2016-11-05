@@ -27,19 +27,19 @@ chown -R abc:abc /config
 # opt out for autoupdates
 [ "$ADVANCED_DISABLEUPDATES" ] && exit 0
 
-cd /config/www/plugins/Codiad-Collaborative-master/
+cd /config/www/plugins/Codiad-Collaborative-master/ || exit
 git pull
 
-cd /config/www
+cd /config/www || exit
 git pull
 
-cd /config/www/plugins/Codiad-CodeGit-master/
+cd /config/www/plugins/Codiad-CodeGit-master/ || exit
 git pull
 
-cd /config/www/plugins/Codiad-DragDrop-master/
+cd /config/www/plugins/Codiad-DragDrop-master/ || exit
 git pull
 
-cd /config/www/plugins/Codiad-Terminal-master/
+cd /config/www/plugins/Codiad-Terminal-master/ || exit
 git pull
 
 #fix ownership
