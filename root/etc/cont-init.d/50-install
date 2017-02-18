@@ -1,0 +1,40 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders
+mkdir -p \
+	/config/projects
+
+# install codiad and plugins
+if [ ! -d "/config/www/.git" ]; then
+	rm -rf /config/www/*
+	git clone https://github.com/Codiad/Codiad /config/www
+	[[ -e /config/www/config.php ]] && rm /config/www/config.php
+fi
+
+[[ ! -d "/config/www/plugins/Codiad-Collaborative-master/.git" ]] && \
+	git clone https://github.com/Codiad/Codiad-Collaborative \
+	/config/www/plugins/Codiad-Collaborative-master/
+
+[[ ! -d "/config/www/plugins/Codiad-CodeGit-master/.git" ]] && \
+	git clone https://github.com/Andr3as/Codiad-CodeGit \
+	/config/www/plugins/Codiad-CodeGit-master/
+
+[[ ! -d "/config/www/plugins/Codiad-DragDrop-master/.git" ]] && \
+	git clone https://github.com/Andr3as/Codiad-DragDrop \
+	/config/www/plugins/Codiad-DragDrop-master/
+
+[[ ! -d "/config/www/plugins/Codiad-Terminal-master/.git" ]] && \
+	git clone https://github.com/Fluidbyte/Codiad-Terminal \
+	/config/www/plugins/Codiad-Terminal-master/
+
+# copy config
+[[ ! -e /config/www/config.php ]] && \
+	cp /defaults/config.php /config/www/config.php
+
+# fix collaboration error
+sed -i s/' echo formatJSEND("error","Warning: File ".'/'#echo formatJSEND("error","Warning: File ".'/ \
+	/config/www/components/active/class.active.php
+
+# permissions
+chown -R abc:abc \
+	/config
