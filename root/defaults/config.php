@@ -13,7 +13,7 @@ define("BASE_PATH", "/config/www/");
 define("BASE_URL", "localhost");
 // THEME : default, modern or clear (look at /themes)
 define("THEME", "default");
-// ABSOLUTE PATH, this is used as whitelist for absolute path projects 
+// ABSOLUTE PATH, this is used as whitelist for absolute path projects
 define("WHITEPATHS", BASE_PATH . ",/home,/");
 // SESSIONS (e.g. 7200)
 $cookie_lifetime = "0";
