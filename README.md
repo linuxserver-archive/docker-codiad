@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: http://codiad.com/
+[hub]: https://hub.docker.com/r/linuxserver/codiad/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,9 +14,8 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # linuxserver/codiad
 [![](https://images.microbadger.com/badges/version/linuxserver/codiad.svg)](https://microbadger.com/images/linuxserver/codiad "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/codiad.svg)](http://microbadger.com/images/linuxserver/codiad "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/codiad.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/codiad.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-codiad)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-codiad/)
-[hub]: https://hub.docker.com/r/linuxserver/codiad/
 
-[Codiad][codiadurl] is a web-based IDE framework with a small footprint and minimal requirements. We have added a few plugins. More can be added in the marketplace in the WebUI
+[Codiad][appurl] is a web-based IDE framework with a small footprint and minimal requirements. We have added a few plugins. More can be added in the marketplace in the WebUI
 
 * Collaboration - https://github.com/Codiad/Codiad-Collaborative
 * Terminal - https://github.com/Fluidbyte/Codiad-Terminal
@@ -22,8 +23,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * Drag and Drop - https://github.com/Andr3as/Codiad-DragDrop
 
 
-[![codiad](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/codiad.png)][codiadurl]
-[codiadurl]: http://codiad.com/
+[![codiad](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/codiad.png)][appurl]
 
 ## Usage
 
