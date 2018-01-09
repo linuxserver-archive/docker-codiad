@@ -86,8 +86,9 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
-+ **25.05.17:** Rebase to alpine linux nginx 3.6.
-+ **18.02.17:** Rebase to alpine linux nginx 3.5.
++ **09.01.18:** Rebase to alpine linux 3.7.
++ **25.05.17:** Rebase to alpine linux 3.6.
++ **18.02.17:** Rebase to alpine linux 3.5.
 + **14.10.16:** Add version layer information.
 + **10.09.16:** Add layer badges to README
 + **06.11.15:** Initial Release
