@@ -12,7 +12,8 @@ RUN \
 	git \
 	expect \
 	php7-ldap \
-	php7-zip
+	php7-zip \
+	openssh-client
 
 # copy local files
 COPY root/ /
