@@ -69,6 +69,13 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 * use /config/projects to save your projects, for data persistence
 * change /config/www/plugins/Codiad-CodeGit-master/shell.sh to add Git User/Pass
 * change /config/www/plugins/Codiad-Terminal-master/emulator/term.php to change terminal password
+* generate your SSH keys for git ssh repo using these commands in the terminal app, and put the public key in your git server :
+
+```
+ssh-keygen -f ~/.ssh/id_rsa
+ssh-keyscan $DOMAIN_NAME_OF_MY_GIT_SERVER >> /config/.ssh/known_hosts
+cat /config/.ssh/id_rsa.pub
+```
 
 ## Info
 
