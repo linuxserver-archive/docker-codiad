@@ -13,7 +13,7 @@ RUN \
 	expect \
 	openssh-client \
 	php7-ldap \
-	php7-zip \
+	php7-zip
 	
 # copy local files
 COPY root/ /
