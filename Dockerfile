@@ -11,10 +11,10 @@ RUN \
  apk add --no-cache \
 	git \
 	expect \
+	openssh-client \
 	php7-ldap \
 	php7-zip \
-	openssh-client
-
+	
 # copy local files
 COPY root/ /
 
