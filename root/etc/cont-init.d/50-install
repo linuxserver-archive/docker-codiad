@@ -46,3 +46,8 @@ cp -a /config/build/* /config/www/
 # permissions
 chown -R abc:abc \
         /config
+
+# fix temporary error in upstream codiad use of mb_ord()
+# https://github.com/Codiad/Codiad/issues/1082
+cd /config/www/lib
+sed -i 's!\(mb_ord\)!codiad_\1!g;s!\(mb_chr\)!codiad_\1!g' diff_match_patch.php
