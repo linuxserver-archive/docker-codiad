@@ -34,8 +34,7 @@ if [ ! -e /config/www/config.php ] ; then \
 fi
 
 sed -i \
-	's#define("WHITEPATHS", BASE_PATH . ",/home");#\
-	define("WHITEPATHS", BASE_PATH . ",/home,/config/projects");#g' \
+	's#define("WHITEPATHS", BASE_PATH . ",/home");#define("WHITEPATHS", BASE_PATH . ",/home,/config/projects");#g' \
 	${INSTALL_SED}
 
 # fix collaboration error
