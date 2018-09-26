@@ -69,6 +69,9 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 * use /config/projects to save your projects, for data persistence
 * change /config/www/plugins/Codiad-CodeGit-master/shell.sh to add Git User/Pass
 * change /config/www/plugins/Codiad-Terminal-master/emulator/term.php to change terminal password
+* if when loading projects you get a constant spinner, use the following command in the contaier to remedy.
+
+`sed -i 's!\(mb_ord\)!codiad_\1!g;s!\(mb_chr\)!codiad_\1!g' /config/www/lib/diff_match_patch.php`
 
 ## Info
 
