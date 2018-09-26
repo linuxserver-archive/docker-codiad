@@ -89,6 +89,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
++ **26.09.18:** Add sed to init file to configure projects folder correctly.
 + **04.09.18:** Rebase to alpine linux 3.8.
 + **09.01.18:** Rebase to alpine linux 3.7.
 + **25.05.17:** Rebase to alpine linux 3.6.
