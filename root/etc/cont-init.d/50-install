@@ -27,9 +27,16 @@ fi
 	git clone https://github.com/Fluidbyte/Codiad-Terminal \
 	/config/www/plugins/Codiad-Terminal-master/
 
-# copy config
-[[ ! -e /config/www/config.php ]] && \
-	cp /defaults/config.php /config/www/config.php
+# configure projects folder
+if [ ! -e /config/www/config.php ] ; then \
+	INSTALL_SED=/config/www/components/install/process.php ;
+	else INSTALL_SED=/config/www/config.php
+fi
+
+sed -i \
+	's#define("WHITEPATHS", BASE_PATH . ",/home");#\
+	define("WHITEPATHS", BASE_PATH . ",/home,/config/projects");#g' \
+	${INSTALL_SED}
 
 # fix collaboration error
 sed -i s/' echo formatJSEND("error","Warning: File ".'/'#echo formatJSEND("error","Warning: File ".'/ \
