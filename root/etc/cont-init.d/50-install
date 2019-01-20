@@ -4,10 +4,14 @@
 mkdir -p \
 	/config/projects
 
+# Get version string
+CODIAD_COMMIT=$(cat /version.txt)
+
 # install codiad and plugins
 if [ ! -d "/config/www/.git" ]; then
 	rm -rf /config/www/*
 	git clone https://github.com/Codiad/Codiad /config/www
+	git --git-dir=/config/www/.git --work-tree=/config/www checkout ${CODIAD_COMMIT}
 	[[ -e /config/www/config.php ]] && rm /config/www/config.php
 fi
 
