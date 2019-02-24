@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.nginx.arm64:3.8
+FROM lsiobase/alpine.nginx.arm64:3.9
 
 # Add qemu to build on x86_64 systems
 COPY qemu-aarch64-static /usr/bin
@@ -15,6 +15,7 @@ RUN \
  apk add --no-cache \
 	expect \
 	jq \
+        openssh-client \
 	php7-ldap \
 	php7-zip && \
  echo "**** Tag this image with current version ****" && \

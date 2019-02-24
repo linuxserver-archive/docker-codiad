@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.nginx:3.8
+FROM lsiobase/alpine.nginx:3.9
 
 # set version label
 ARG BUILD_DATE
@@ -12,6 +12,7 @@ RUN \
  apk add --no-cache \
 	expect \
 	jq \
+	openssh-client \
 	php7-ldap \
 	php7-zip && \
  echo "**** Tag this image with current version ****" && \
