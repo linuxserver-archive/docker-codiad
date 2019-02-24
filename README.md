@@ -149,6 +149,7 @@ Below are the instructions for updating containers:
 
 ## Versions
 
+* **22.02.19:** - Rebasing to alpine 3.9, adding ssh client.
 * **16.01.19:** - Add pipeline logic and multi arch.
 * **26.09.18:** - Add sed to init file to configure projects folder correctly.
 * **04.09.18:** - Rebase to alpine linux 3.8.
