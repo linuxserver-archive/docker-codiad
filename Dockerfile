@@ -12,6 +12,7 @@ RUN \
  apk add --no-cache \
 	expect \
 	jq \
+	openssh-client \
 	php7-ldap \
 	php7-zip && \
  echo "**** Tag this image with current version ****" && \
