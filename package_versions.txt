@@ -62,8 +62,8 @@ tcl tcl-8.6.9-r0
 expect expect-5.45.4-r0
 oniguruma oniguruma-6.9.1-r0
 jq jq-1.6-r0
-openssh-keygen openssh-keygen-7.9_p1-r2
-openssh-client openssh-client-7.9_p1-r2
+openssh-keygen openssh-keygen-7.9_p1-r4
+openssh-client openssh-client-7.9_p1-r4
 db db-5.3.28-r1
 libsasl libsasl-2.1.27-r1
 libldap libldap-2.4.47-r2
