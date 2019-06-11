@@ -1,0 +1,21 @@
+#!/usr/bin/with-contenv bash
+
+echo '
+******************************************************
+******************************************************
+*                                                    *
+*                                                    *
+*          This image has been deprecated            *
+*                                                    *
+*    It will no longer recieve security updates      *
+*                                                    *
+*       We reccomend Cloud9 as a replacement         *
+*                                                    *
+*    https://hub.docker.com/r/linuxserver/cloud9     *
+*                                                    *
+*    https://github.com/linuxserver/docker-cloud9    *
+*                                                    *
+*                                                    *
+*                                                    *
+******************************************************
+******************************************************'

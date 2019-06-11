@@ -4,7 +4,7 @@
 project_name: codiad
 project_url: "http://codiad.com/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/codiad.png"
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a web-based IDE framework with a small footprint and minimal requirements. We have added a few plugins. More can be added in the marketplace in the WebUI."
+project_blurb: "THIS IMAGE IS DEPRECATED. PLEASE MIGRATE TO CLOUD9 IF POSSIBLE `linuxserver/cloud9` [{{ project_name|capitalize }}]({{ project_url }}) is a web-based IDE framework with a small footprint and minimal requirements. We have added a few plugins. More can be added in the marketplace in the WebUI."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
 
@@ -46,6 +46,7 @@ app_setup_block_enabled: false
 
 # changelog
 changelogs:
+  - { date: "10.06.19:", desc: "Deprecate Image." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
   - { date: "22.02.19:", desc: "Rebasing to alpine 3.9, adding ssh client." }
   - { date: "16.01.19:", desc: "Add pipeline logic and multi arch." }
